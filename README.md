@@ -33,8 +33,19 @@
 ![salesVsYeargraph](https://user-images.githubusercontent.com/112730629/197611672-5bed9627-8ada-4f5c-b853-53428f21beee.png)
 > According to this graph, the most profitable outlet location is also the oldest, having been established in 1985. There was little variation in outlet sales other than what looks like around 1997, when outlet sales dipped below 500.
 
-### Feature Coefficients
-![top3coeffs.png]
+### Linear Regression Feature Coefficents
+![top3coeffs](https://user-images.githubusercontent.com/112730629/214708538-5423f8ea-fb7b-49e3-a668-ee5558cc0a8f.png)
+* Our top 3 most impactful features were Outlet_Type_Grocery_Store, Outlet_Type_SupermarketType3 and Outlet_Type_SupermarketType1
+* Basically, the type of outlet/store determined the sales of that establishment.
+* If the outlet/store type was a grocery store, sales would typically drop by 1500.
+* If the store was a Supermarket Type3, sales would increase by 1500.
+* Type1 typically increased sales by around 250.
+* (currency is Rupees)
+
+### RandomForest Feature Importances
+![most5importances](https://user-images.githubusercontent.com/112730629/214708777-d62908bf-f3f4-4133-825b-b2355d0ff271.png)
+* The 5 features graphed above had the most impact on outlet sales according to the RandomForest. Item_MRP had the most impact, followed by whether or not the store was a grocery store. Surprisingly, Item_Weight also was in the top 5 most important features for determining sales.
+
 
 ## Model
 * Tested both linear regression and regression tree models. 
