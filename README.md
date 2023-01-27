@@ -44,7 +44,7 @@
 
 ### RandomForest Feature Importances
 ![most5importances](https://user-images.githubusercontent.com/112730629/214708777-d62908bf-f3f4-4133-825b-b2355d0ff271.png)
-* The 5 features graphed above had the most impact on outlet sales according to the RandomForest. Item_MRP had the most impact, followed by whether or not the store was a grocery store. Surprisingly, Item_Weight also was in the top 5 most important features for determining sales.
+* The 5 features graphed above had the most impact on outlet sales according to the RandomForest. Item_MRP had the most impact, followed by whether or not the store was a grocery store. Item_Weight also was in the top 5 most important features for determining sales.
 
 ### SHAP Summary Plots
 ![sumPlot_bar](https://user-images.githubusercontent.com/112730629/215018388-b6ab51f8-7a8e-47dd-b566-9a675cb4a928.png)
