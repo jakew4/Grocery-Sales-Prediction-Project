@@ -64,6 +64,37 @@
 * Our 3rd most impactful feature is whether or not the store is a Supermarket Type3.
   * Supermarkets (and especially those that are type3) produce much higher sales than grocery stores.
 
+### SHAP Force Plots
+#### High Sales Example
+![shap_max_sales](https://user-images.githubusercontent.com/112730629/215221592-4cca4f9e-6d66-47d5-9512-46fc881caa44.png)
+* According to our force plot, the base value for sales is 2,156 rupees.
+* The store sales for this particular example is 8,422.74 rupees.
+* The most influential factors that contributed to increasing store sales were the Item_MRP, the fact that the store was a Supermarket Type3, and that it was NOT a grocery store.
+ * The Item_MRP for this example was one of the highest item price values we have (260.6)
+  * The max Item_MRP was 264.72
+
+#### Low Sales Example
+![shap_low_sales](https://user-images.githubusercontent.com/112730629/215221726-93908852-ea18-44c1-8d2d-4b78131365eb.png)
+* This example yielded an expected sales value close to the lowest observed sales amount
+* The fact that the store was a grocery store and that the Item_MRP was one of the lowest contributed the most to the low sales value
+
+### LIME Local Explanations
+#### High Sales Example
+![lime_max_sales](https://user-images.githubusercontent.com/112730629/215221801-4214970f-565f-42b8-a445-8213a142f91b.png)
+* According to our LIME Explanation, the most important feature that contributed to our model's prediction was that the store in question was NOT a grocery store.
+* The Item_MRP was the second most influential feature - this makes sense as a higher MRP typically yielded higher sales
+ * Our expected sales value (8,422.74) is one of the higher store sales amounts
+* The store being a Supermarket Type3 also contributed heavily to the high sales value
+
+#### Low Sales Example
+![lime_low_sales](https://user-images.githubusercontent.com/112730629/215221844-7914206b-5852-4db2-b69b-a29a69c0b8c4.png)
+* Our LIME explanations very closely mirror information from the SHAP Force plots
+* According to our LIME Explanation, the example in question returned such a low sales value mainly because the store was a grocery store.
+* The Item_MRP value being close to the minimum value observed also contributed heavily to the low sales amount
+* The fact that the store in question was NOT a Supermarket Type3 was also very influential in the model's prediction
+
+
+
 
 ## Model
 * Tested both linear regression and regression tree models. 
