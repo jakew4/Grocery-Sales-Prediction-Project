@@ -46,6 +46,24 @@
 ![most5importances](https://user-images.githubusercontent.com/112730629/214708777-d62908bf-f3f4-4133-825b-b2355d0ff271.png)
 * The 5 features graphed above had the most impact on outlet sales according to the RandomForest. Item_MRP had the most impact, followed by whether or not the store was a grocery store. Surprisingly, Item_Weight also was in the top 5 most important features for determining sales.
 
+### SHAP Summary Plots
+![sumPlot_bar](https://user-images.githubusercontent.com/112730629/215018388-b6ab51f8-7a8e-47dd-b566-9a675cb4a928.png)
+* Many of the same features are found in both the RandomForest feature importance graph and the SHAP summary bar plot.
+* The only variation in the top 5 is that the feature importances include Item_Type_Household as the 4th most impactful feature.
+  * In contrast, the SHAP importances include Item_Visibilty as the 3rd most impactful feature and does not include Item_Type_Household
+* The feature importances also have Supermarket_Type3 ranked higher
+  * While Supermarket_Type3 is also present in the top 5 SHAP importances, it is the 4th most important
+
+### SHAP Dot Plot
+![sumplot_dot](https://user-images.githubusercontent.com/112730629/215018607-46c72a11-0bd0-417a-93eb-5aacc66ffbbf.png)
+* According to our dot plot the Item_MRP is our most impactful feature and very highly correlated with sales.
+  * The higher the MRP, the higher the target value (outlet sales)
+  * If Item_MRP decreases, so does outlet sales
+* The next most impactful feature is whether or not the store in question is a grocery store.
+  * If it is, sales are expected to drop dramatically. If not, then sales will likely increase.
+* Our 3rd most impactful feature is whether or not the store is a Supermarket Type3.
+  * Supermarkets (and especially those that are type3) produce much higher sales than grocery stores.
+
 
 ## Model
 * Tested both linear regression and regression tree models. 
