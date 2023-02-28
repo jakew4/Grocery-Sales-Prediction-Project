@@ -23,6 +23,7 @@
 * Cleaned data by removing duplicates, imputing missing values, and correcting any inconsistencies in categorical data 
 * Prepared exploratory/explanatory graphs to further analyze data and visualize different trends in the data
 * Preprocessed and prepared data for machine learning models 
+* Tested multiple regression models and made recommendations based on model with best regression metrics 
 
 ## Results: 
 ### Item MRP vs. Total Sales (by outlet type)
