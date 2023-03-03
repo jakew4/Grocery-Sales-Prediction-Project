@@ -106,7 +106,7 @@ Item_Weight	| Weight of product
 ## Model
 * Tested both linear regression and regression tree models. 
 * Regression tree model returned much better regression metrics 
-* * R2 scores - training: 0.54
+* * R2 scores - training: 0.55
 *             - testing: 0.48
 * * RMSE score - training: 136.78
 *              - testing : 1667.62
